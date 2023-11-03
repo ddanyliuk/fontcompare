@@ -16,8 +16,28 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
 body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
   color: rgb(var(--foreground-rgb));
+  font-size: 16px;
+  line-height: 1.3;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -25,3 +45,41 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: transparent;
+  box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: darkgray;
+  border-radius: 8px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+}
+
+svg.iconClose {
+  max-width: 14px;
+  cursor: pointer;
+  transition: transform .25s ease-in-out;
+}
+
+svg.iconClose line {
+  stroke-width: 2px;
+  stroke-linecap: round;
+  fill: none;
+  stroke: white;
+}
+
+svg.iconClose.is-open  {
+  transform: rotateX(180deg);
+}
+
