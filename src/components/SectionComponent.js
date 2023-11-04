@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import MainText from "@/components/MainText";
 import CompareButton from "@/components/CompareButton";
 import SelectFont from "@/components/SelectFont";
+import Image from "next/image";
 
 export const SectionComponent = ({
   name,
@@ -30,13 +31,15 @@ export const SectionComponent = ({
     }
   }, [compareIsActive, comparedFont, otherFonts])
 
-  const styling = image && {
-    backgroundImage : image && `url(${image})`,
-    backgroundSize: 'cover'
-  }
-
   return (
-    <div id={title} style={styling} className={` bg-fixed w-full bg-gradient-to-r ${gradient} to-indigo-500 mx-auto flex flex-col`}>
+    <div id={title} className={`relative w-full bg-gradient-to-r ${gradient} to-indigo-500 mx-auto flex flex-col`}>
+      {image && <Image
+        src={image}
+        alt={`${title} background image`}
+        layout='fill'
+        objectFit='cover'
+        objectPosition='center'
+      />}
       <div className='relative w-full flex flex-col pt-8 pb-6 px-4 sm:py-10 sm:px-6'>
         <div className={`flex flex-row mb-4`}>
           <h2 className={`${font.className} z-10 text-1xl text-white`}>{name} - <a className='underline hover:text-emerald-900 cursor-pointer' target='_blank' href={link}>Link to Google Fonts</a></h2>

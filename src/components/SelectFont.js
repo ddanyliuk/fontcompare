@@ -11,7 +11,7 @@ const SelectFont = ({font, handleFontSelect, otherFonts, handleActiveSelect, com
           <line x1="14" y1="2" x2="8" y2="8" />
         </svg>
       </div>
-      <div className={`${selectIsActive ? 'h-full' : 'h'} scrollbar flex flex-col bg-black/75  overflow-y-scroll`}>
+      <div className={`${selectIsActive ? 'h-full' : 'h'} z-10 scrollbar flex flex-col bg-black/75  overflow-y-scroll`}>
         {selectIsActive && otherFonts.map((i, index) =>
           <span
             onClick={() =>handleFontSelect(i.title)}
