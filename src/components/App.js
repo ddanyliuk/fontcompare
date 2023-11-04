@@ -225,7 +225,7 @@ const App = ({allFonts}) => {
         <meta property="og:image" content=""/>
         <meta property="og:image:type" content="image/png"/>
         <meta property="og:title" content="FontCompare"/>
-        <meta property="og:url" content="https://dimidanyliuk.com/fontcompare"/>
+        <meta property="og:url" content="https://fontcompare-phi.vercel.app/"/>
         <meta property="og:type" content="website"/>
       </Head>
       <IntroComponent />
