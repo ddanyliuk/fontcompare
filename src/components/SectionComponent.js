@@ -31,12 +31,18 @@ export const SectionComponent = ({
     }
   }, [compareIsActive, comparedFont, otherFonts])
 
-  const styling = {
-    backgroundImage : `url(${image?.src})`
-  }
   return (
-    <div id={title} style={styling} className={`bg-fixed w-full bg-gradient-to-r ${gradient} to-indigo-500 mx-auto flex flex-col`}>
-      <div className='z-10 relative w-full flex flex-col pt-8 pb-6 px-4 sm:py-10 sm:px-6'>
+    <div id={title} className={`relative w-full bg-gradient-to-r ${gradient} mx-auto flex flex-col`}>
+      {image &&
+        <Image
+          className={'bg-fixed'}
+        src={image}
+        alt={`${title} background image`}
+        layout='fill'
+        objectFit='cover'
+        objectPosition='center'
+      />}
+      <div className='relative w-full flex flex-col pt-8 pb-6 px-4 sm:py-10 sm:px-6'>
         <div className={`flex flex-row mb-4`}>
           <h2 className={`${font.className} z-10 text-1xl text-white`}>{name} - <a className='underline hover:text-emerald-900 cursor-pointer' target='_blank' href={link}>Link to Google Fonts</a></h2>
           <div className={`ml-auto flex flex-row absolute top-[40px] right-[20px] sm:right-[40px]`}>
