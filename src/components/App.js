@@ -2,6 +2,13 @@ import Head from 'next/head'
 import { roboto, merriweather, mobster, indieFlower, inconsolata, openSans, oswald, raleway, playfairDisplay, lora, slabo13px, nunito, titilliumWeb, mukta, dosis, anton, dancingScript, exo2, teko } from '@/styles/fonts'
 import {SectionComponent} from "./SectionComponent";
 import IntroComponent from "./IntroComponent";
+import joeykyber from 'public/images/joey-kyber-unsplash.jpeg'
+import aaronsamuel from 'public/images/aaron-samuel-unsplash.jpeg'
+import lauraadai from 'public/images/laura-adai-unsplash.jpeg'
+import s2art from 'public/images/s2-art-unsplash.jpeg'
+import joshuareddekopp from 'public/images/joshua-reddekopp-unsplash.jpeg'
+import philippemignot from 'public/images/philippe-mignot-unsplash.jpeg'
+import maxadulyanukosol from 'public/images/max-adulyanukosol-unsplash.jpeg'
 
 const some = [
   {
@@ -13,7 +20,7 @@ const some = [
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod justo pharetra, porta ipsum vel, hendrerit mauris. Praesent elementum, mauris scelerisque malesuada fermentum, arcu ante egestas ante, a gravida dolor risus vel ligula. Cras in nulla bibendum, posuere diam nec, posuere est. Pellentesque ullamcorper magna urna, at tincidunt risus placerat sit amet. Sed rutrum.",
     "color": "#FF6633",
     "gradient": "from-rose-500 to-blue-500",
-    "image": '/static/images/joey-kyber-unsplash.jpeg'
+    "image": joeykyber
   },
   {
     "name": merriweather,
@@ -24,7 +31,7 @@ const some = [
     "text": "Aliquam sagittis est id lorem maximus, eu venenatis lectus laoreet. Duis semper magna eu nibh commodo, vitae interdum orci semper. Proin maximus, sem sit amet ornare molestie, ante mauris accumsan lacus, vel faucibus tortor ligula sed purus. Nunc vitae vulputate elit. In ut aliquet felis, nec pretium nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent.",
     "color": "#FFB399",
     "gradient": "from-pink-800 to-indigo-500",
-    "image": '/static/images/aaron-samuel-unsplash.jpeg'
+    "image": aaronsamuel
   },
   {
     "name": mobster,
@@ -65,7 +72,7 @@ const some = [
     "text": "Integer et consequat tellus. Mauris vulputate, arcu at consectetur porta, est felis porta libero, nec hendrerit quam augue sed turpis. Praesent purus purus, mattis vel cursus ut, vestibulum ac purus. Integer ac pellentesque nibh. Praesent faucibus turpis sed neque pellentesque, nec laoreet ex tristique. Aenean posuere fringilla bibendum. Integer volutpat, justo id vestibulum.",
     "color": "#E6B333",
     "gradient": "from-lime-500 to-indigo-500",
-    "image": '/static/images/laura-adai-unsplash.jpeg'
+    "image": lauraadai
   },
   {
     "name": oswald,
@@ -86,7 +93,7 @@ const some = [
     "text": "Duis ut arcu nec quam laoreet vehicula ut et justo. Maecenas facilisis, metus a ullamcorper aliquam, tellus massa sagittis mi, tristique posuere diam nisi quis lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nec facilisis dui, vel efficitur neque. Nam vestibulum ante vel mollis facilisis. Praesent blandit sem nec ipsum ultricies porta.",
     "color": "#999966",
     "gradient": "from-purple-500 to-lime-500",
-    "image": '/static/images/s2-art-unsplash.jpeg'
+    "image": s2art
   },
   {
     "name": playfairDisplay,
@@ -117,7 +124,7 @@ const some = [
     "text": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer fringilla aliquet nibh, et pretium metus aliquet sit amet. Aliquam elit tortor, fermentum in massa eu, cursus consequat nibh. Nulla convallis nisi nec elit cursus, non tempor nunc ultricies. Integer hendrerit justo est, quis consequat diam commodo scelerisque. Donec molestie.",
     "color": "#80B300",
     "gradient": "from-violet-500 to-fuchsia-500",
-    "image": '/static/images/joshua-reddekopp-unsplash.jpeg'
+    "image": joshuareddekopp
   },
   {
     "name": nunito,
@@ -138,7 +145,7 @@ const some = [
     "text": "Donec a lacus eu urna maximus auctor ut sed lectus. Vestibulum in iaculis enim, ut aliquam lacus. Maecenas a luctus purus. Suspendisse dolor sem, mollis commodo nunc ut, varius cursus purus. Etiam ultrices est lorem, in pharetra dolor volutpat eu. Nam lobortis diam elit. Nullam et elit id mauris sodales ultricies at eu nisi. Phasellus maximus magna quam, at elementum odio vulputate sed.",
     "color": "#E6B3B3",
     "gradient": "from-rose-500 to-blue-500",
-    "image": '/static/images/philippe-mignot-unsplash.jpeg'
+    "image": philippemignot
   },
   {
     "name": mukta,
@@ -169,7 +176,7 @@ const some = [
     "text": "Cras convallis condimentum tellus, ac dignissim ante fermentum vitae. Morbi tempor nunc nibh, sed fringilla nibh hendrerit at. Maecenas pretium lectus turpis, ac dignissim turpis egestas ac. Aliquam erat volutpat. Integer nec tellus cursus, dapibus lacus vel, porta mauris. Nunc consectetur libero ut nibh congue, id aliquet arcu venenatis. Mauris gravida eros et augue rhoncus suscipit.",
     "color": "#FF99E6",
     "gradient": "from-purple-500 to-pink-500",
-    "image": '/static/images/max-adulyanukosol-unsplash.jpeg'
+    "image": maxadulyanukosol
   },
   {
     "name": dancingScript,
@@ -208,10 +215,10 @@ const App = () => {
     <>
       <Head>
         <title>FontCompare</title>
-        <link rel="apple-touch-icon" sizes="144x144" href="/static/apple-touch-icon.png"/>
-        <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png"/>
-        <link rel="shortcut icon" href="/static/favicon-32x32.png"/>
+        <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png"/>
+        <link rel="shortcut icon" href="/images/favicon-32x32.png"/>
         <meta name="keywords" content="comparing fonts, font combination"/>
         <meta name="author" content="Dimi Danyliuk"/>
         <meta name="description" content="Google Web fonts with various ipsums"/>
