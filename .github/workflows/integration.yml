@@ -79,7 +79,7 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: |
-            ./.next
+            ./dist
 
   # Deployment job
   deploy:
