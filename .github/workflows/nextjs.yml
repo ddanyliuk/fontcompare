@@ -78,14 +78,14 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
-          name: static-site
+          name: github-pages
           path: 
             dist/
 
   # Deployment job
   deploy:
     environment:
-      name: static-site
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
