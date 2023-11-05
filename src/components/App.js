@@ -9,6 +9,7 @@ import maxadulyanukosol from 'public/images/max-adulyanukosol-unsplash.jpeg'
 import Head from 'next/head'
 import {SectionComponent} from "@/components/SectionComponent";
 import IntroComponent from "@/components/IntroComponent";
+import Link from "next/link";
 const data = [
   {
     "name": roboto,
@@ -209,15 +210,15 @@ const data = [
   },
 ]
 
-const App = ({allFonts}) => {
+const App = () => {
   return (
     <>
       <Head>
         <title>FontCompare</title>
-        <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon.png"/>
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png"/>
-        <link rel="shortcut icon" href="/images/favicon-32x32.png"/>
+        <Link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon.png"/>
+        <Link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png"/>
+        <Link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png"/>
+        <Link rel="shortcut icon" href="/images/favicon-32x32.png"/>
         <meta name="keywords" content="comparing fonts, font combination"/>
         <meta name="author" content="Dimi Danyliuk"/>
         <meta name="description" content="Google Web fonts with various ipsums"/>
