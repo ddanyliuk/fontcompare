@@ -7,8 +7,8 @@ import joshuareddekopp from 'public/images/joshua-reddekopp-unsplash.jpeg'
 import philippemignot from 'public/images/philippe-mignot-unsplash.jpeg'
 import maxadulyanukosol from 'public/images/max-adulyanukosol-unsplash.jpeg'
 import Head from 'next/head'
-import {SectionComponent} from "./SectionComponent";
-import IntroComponent from "./IntroComponent";
+import {SectionComponent} from "@/components/SectionComponent";
+import IntroComponent from "@/components/IntroComponent";
 const data = [
   {
     "name": roboto,
